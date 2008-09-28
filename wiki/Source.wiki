@@ -1,9 +1,23 @@
-#summary SWT/XML source is hosted on github
+#summary Sources and developer setup
 
-= Source Repository =
+= Getting started with SWT/XML development =
 
-[http://github.com/ralfebert/swtxml/]
+SWT/XML is hosted on github: [http://github.com/ralfebert/swtxml/].
+If you never used git before see [http://github.com/guides/home GitHub Guides] for documentation on installing/using git.
 
+Check out the git repository using:
 {{{
 git clone git://github.com/ralfebert/swtxml.git
 }}}
+
+= Eclipse setup =
+
+The git repository contains three plugins:
+
+* com.swtxml (the runtime plug-in for your application)
+* com.swtxml.ide (the IDE plug-in for editing SWT/XML files using Eclipse Web Tools)
+* easymock (as easymock is heavily used for testing SWT/XML, I bundled it with the SWT/XML plug-ins)
+
+Import them using File / Import / Existing Projects into Workspace. Currently I'm only developing and testing with Eclipse 3.4, so you might run into incompatibilities with older versions.
+
+Start the IDE using "Launch an Eclipse application" from com.swtxml.ide's "plugin.xml".
