@@ -1,0 +1,9 @@
+#summary source
+
+= Source Repository =
+
+SWT/XML source is hosted on github: [http://github.com/ralfebert/swtxml/]
+
+{{{
+git clone http://github.com/ralfebert/swtxml/
+}}}
