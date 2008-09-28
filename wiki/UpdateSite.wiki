@@ -1,6 +1,6 @@
 #summary Eclipse Update Site for installing SWT/XML
 
-= Introduction =
+= Eclipse Update Site =
 
 An Eclipse Update Site for installing the Runtime and IDE plug-in in Eclipse 3.4 is available at:
 
