@@ -1,0 +1,15 @@
+#summary Eclipse Update Site for installing SWT/XML
+
+= Introduction =
+
+An Eclipse Update Site for installing the Runtime and IDE plug-in in Eclipse 3.4 is available at:
+
+{{{
+http://www.swtxml.com/updates/
+}}}
+
+= Packaged downloads =
+
+Traditional packaged downloads containing the built plug-ins and the sources are available here:
+
+  [http://code.google.com/p/swtxml/downloads/list Downloads]
