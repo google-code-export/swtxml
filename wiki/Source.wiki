@@ -14,9 +14,9 @@ git clone git://github.com/ralfebert/swtxml.git
 
 The git repository contains three plugins:
 
-* com.swtxml (the runtime plug-in for your application)
-* com.swtxml.ide (the IDE plug-in for editing SWT/XML files using Eclipse Web Tools)
-* easymock (as easymock is heavily used for testing SWT/XML, I bundled it with the SWT/XML plug-ins)
+  * *com.swtxml* (the runtime plug-in for your application)
+  * *com.swtxml.ide* (the IDE plug-in for editing SWT/XML files using Eclipse Web Tools)
+  * *easymock* (easymock is heavily used for testing SWT/XML, so I bundled it with the SWT/XML plug-ins)
 
 Import them using File / Import / Existing Projects into Workspace. Currently I'm only developing and testing with Eclipse 3.4, so you might run into incompatibilities with older versions.
 
