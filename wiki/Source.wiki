@@ -23,3 +23,5 @@ The git repository contains three plugins:
 Import them using File / Import / Existing Projects into Workspace.
 
 Start the IDE using "Launch an Eclipse application" from com.swtxml.ide's "plugin.xml".
+
+There is a comprehensive test suite in com.swtxml/test. To execute the tests run com.swtxml.AllTests as ~~JUnit test~~.
