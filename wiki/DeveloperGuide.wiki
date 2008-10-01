@@ -62,3 +62,32 @@
     <Text text="456"/> 
 </Composite> 
 }}}
+
+= Using the view class =
+
+  * The view class (same location and name as the markup file) handles parsing the markup and creating the widgets. You can implement the setup method to implement logic to be executed after the view was created. You can use the widgets here by assigning an id="..." attribute in the markup and declaring an @ById annotated field:
+    {{{
+<?xml version="1.0" encoding="utf-8"?>
+<Composite xmlns="http://www.swtxml.com/swt">
+    <Button text="helloWorld" id="btnHelloWorld"/>
+</Composite>
+}}}
+    {{{
+import java.util.Locale;
+
+import org.eclipse.swt.widgets.*;
+import com.swtxml.container.SwtXmlWindow;
+import com.swtxml.swt.byid.ById;
+
+public class SwtWidgetsExamplesWindow extends SwtXmlWindow {
+
+	@ById
+	private Button btnHelloWorld;
+
+	@Override
+	protected void setupView() {
+		//do something with the widgets here
+	}
+
+}
+}}}
