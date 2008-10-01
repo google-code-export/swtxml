@@ -48,21 +48,6 @@
 <Button text="hello" style="TOGGLE,FLAT"/>
     }}}
 
-= Layout markup =
-
-  * Composite elements have a layout attribute which is interpreted in CSS-like syntax. Every setter / field of the Layout class is a property you can specifiy here: 
-    {{{
-<Composite layout="layout:grid; numColumns:3; marginTop:10; "/>
-}}}
-
-  * Inside a Composite, child tags can have a layoutData attribute. You can use all properties of the LayoutData class here:
-    {{{
-<Composite layout="layout:grid; numColumns:2; "> 
-    <Label text="123" layoutData="widthHint:100;"/> 
-    <Text text="456"/> 
-</Composite> 
-}}}
-
 = Using the view class =
 
   * The view class (same location and name as the markup file) handles parsing the markup and creating the widgets.
@@ -92,6 +77,21 @@ public class SwtWidgetsExamplesWindow extends SwtXmlShell {
 	}
 
 }
+}}}
+
+= Layout markup =
+
+  * Composite elements have a layout attribute which is interpreted in CSS-like syntax. Every setter / field of the Layout class is a property you can specifiy here: 
+    {{{
+<Composite layout="layout:grid; numColumns:3; marginTop:10; "/>
+}}}
+
+  * Inside a Composite, child tags can have a layoutData attribute. You can use all properties of the LayoutData class here:
+    {{{
+<Composite layout="layout:grid; numColumns:2; "> 
+    <Label text="123" layoutData="widthHint:100;"/> 
+    <Text text="456"/> 
+</Composite> 
 }}}
 
 = Events =
