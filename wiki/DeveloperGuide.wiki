@@ -114,3 +114,10 @@ public class SwtWidgetsExamplesWindow extends SwtXmlShell {
 }}}
 
 = I18N =
+
+   * To translate your views, you can use placeholders in all text attributes:
+    {{{
+<Button text="%hello"/>
+}}}
+
+   * These are resolved using resource bundles (same name and location as the markup file or plugin.properties for Eclipse RCP applications).
