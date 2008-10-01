@@ -79,7 +79,7 @@ public class SwtWidgetsExamplesWindow extends SwtXmlShell {
 }
 }}}
 
-= Layout markup =
+= Layouts =
 
   * Composite elements have a layout attribute which is interpreted in CSS-like syntax. Every setter / field of the Layout class is a property you can specifiy here: 
     {{{
