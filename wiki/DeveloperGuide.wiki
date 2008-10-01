@@ -54,7 +54,7 @@
 
   * You can implement the setup method to implement logic to be executed after the view was created.
 
-  * You can use the widgets here by assigning an id="..." attribute in the markup and declaring an *@ById* annotated field. The field will be set by the SWT/XML parser.
+  * You can use the widgets here by assigning an id="..." attribute in the markup and declaring an {{{@ById}}} annotated field. The field will be set by the SWT/XML parser.
     {{{
 <?xml version="1.0" encoding="utf-8"?>
 <Composite xmlns="http://www.swtxml.com/swt">
