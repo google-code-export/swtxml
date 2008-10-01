@@ -1,0 +1,64 @@
+#summary Tutorial and guide for developers
+
+= Getting started =
+
+  * Install the SWT/XML plugins in your Eclipse IDE (version 3.4) using the [http://code.google.com/p/swtxml/wiki/UpdateSite?tm=2 update site]
+
+  * For playing around with SWT/XML create a Plug-in project and add a dependency to the "com.swtxml" plug-in
+
+  * Create a new SWT/XML Class using File / New / Other - Other / SWT/XML Class. You need to specify a class name and the base type. Every SWT/XML markup file is accompanied by a  view class with the same name (which extends a SwtXml base class):
+    http://swtxml.googlecode.com/svn/trunk/img/class_swtxml.png
+
+  * The markup file is opened automatically. You can get a preview for swtxml files with Window / Show View / Other / SWT/XML / SWT/XML Preview. It is updated whenever you save an active swtxml editor. The editor has full content assist for SWT/XML markup syntax, so you should be able to use Ctrl+Space everywhere.
+
+= General Markup syntax =
+
+  * The meaning of the XML is defined by its XML namespace. In the example above, the default xmlns is "http://www.swtxml.com/swt". This namespace maps SWT classes to XML - if you're familiar with SWT, you just need learn the conversion rules:
+    {{{
+<?xml version="1.0" encoding="utf-8"?>
+<Composite xmlns="http://www.swtxml.com/swt">
+</Composite>
+    }}}
+
+
+  * Every widget class becomes a XML tag. So you have <Button/>, <Text/>, <Label/> and so on:
+    {{{
+<?xml version="1.0" encoding="utf-8"?>
+<Composite xmlns="http://www.swtxml.com/swt">
+    <Button/>
+</Composite>
+    }}}
+ 
+
+  * Composites can have childs - these are added to the parent: 
+    {{{
+<Composite>
+    <Label/> 
+    <Text/> 
+</Composite> 
+    }}}
+ 
+  * Every setter method of the widget class is an attribute for the tag:
+    {{{
+<Button text="hello" enabled="false"/>
+    }}}
+
+  * Style constants can be specified using a comma separated list in the style attribute:
+    {{{
+<Button text="hello" style="TOGGLE,FLAT"/>
+    }}}
+
+= Layout markup =
+
+  * Composite elements have a layout attribute which is interpreted in CSS-like syntax. Every setter / field of the Layout class is a property you can specifiy here: 
+    {{{
+<Composite layout="layout:grid; numColumns:3; marginTop:10; "/>
+}}}
+
+  * Inside a Composite, child tags can have a layoutData attribute. You can use all properties of the LayoutData class here:
+    {{{
+<Composite layout="layout:grid; numColumns:2; "> 
+    <Label text="123" layoutData="widthHint:100;"/> 
+    <Text text="456"/> 
+</Composite> 
+}}}
