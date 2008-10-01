@@ -65,7 +65,11 @@
 
 = Using the view class =
 
-  * The view class (same location and name as the markup file) handles parsing the markup and creating the widgets. You can implement the setup method to implement logic to be executed after the view was created. You can use the widgets here by assigning an id="..." attribute in the markup and declaring an @ById annotated field:
+  * The view class (same location and name as the markup file) handles parsing the markup and creating the widgets.
+
+  * You can implement the setup method to implement logic to be executed after the view was created.
+
+  * You can use the widgets here by assigning an id="..." attribute in the markup and declaring an *@ById* annotated field. The field will be set by the SWT/XML parser.
     {{{
 <?xml version="1.0" encoding="utf-8"?>
 <Composite xmlns="http://www.swtxml.com/swt">
@@ -73,13 +77,11 @@
 </Composite>
 }}}
     {{{
-import java.util.Locale;
-
 import org.eclipse.swt.widgets.*;
-import com.swtxml.container.SwtXmlWindow;
+import com.swtxml.container.SwtXmlShell;
 import com.swtxml.swt.byid.ById;
 
-public class SwtWidgetsExamplesWindow extends SwtXmlWindow {
+public class SwtWidgetsExamplesWindow extends SwtXmlShell {
 
 	@ById
 	private Button btnHelloWorld;
@@ -91,3 +93,26 @@ public class SwtWidgetsExamplesWindow extends SwtXmlWindow {
 
 }
 }}}
+
+= Events =
+
+   * For handling events the namespace {{{http://www.swtxml.com/events}}} is provided.
+
+   * For every event listener method (like SelectionListener.widgetSelected) it provides an attribute. When the event is triggered, a method by that name is called on your view class (optional with event parameter):
+    {{{
+<?xml version="1.0" encoding="utf-8"?>
+<Composite xmlns="http://www.swtxml.com/swt">
+    <Button text="helloWorld" on:widgetSelected="helloClicked"/>
+</Composite>
+}}}
+    {{{
+public class SwtWidgetsExamplesWindow extends SwtXmlShell {
+
+	private void helloClicked() {
+		//handle event here
+	}
+
+}
+
+
+= I18N =
