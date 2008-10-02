@@ -10,6 +10,6 @@ http://www.swtxml.com/updates/
 
 = Packaged downloads =
 
-Traditional packaged downloads containing the built plug-ins and the sources are available here:
+Packaged downloads containing the built plug-ins and the sources are available here:
 
   [http://code.google.com/p/swtxml/downloads/list Downloads]
