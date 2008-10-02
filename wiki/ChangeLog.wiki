@@ -1,0 +1,15 @@
+#summary Changes / What's new and noteworthy?
+
+= 0.0.5 =
+  * Package com.swtxml.container renamed to com.swtxml.views
+
+= 0.0.4 =
+  * [http://code.google.com/p/swtxml/issues/detail?id=11 #11] I18N Support via label properties (%test)
+  * [http://code.google.com/p/swtxml/issues/detail?id=12 #12] Namespace http://www.swtxml.com/events for creating event listeners which delegate to the view class
+  * [http://code.google.com/p/swtxml/issues/detail?id=8 #8] "New File" Wizard for creating class + markup in Eclipse IDE
+
+= 0.0.2 =
+
+  * [http://code.google.com/p/swtxml/issues/detail?id=10 #10] More reliable preview in IDE
+  * Namespace is http://www.swtxml.com/swt now
+  * [#13] Extension point to define own namespaces
