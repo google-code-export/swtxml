@@ -13,3 +13,7 @@ http://www.swtxml.com/updates/
 Packaged downloads containing the built plug-ins and the sources are available here:
 
   [http://code.google.com/p/swtxml/downloads/list Downloads]
+
+= Requirements =
+
+ * Eclipse 3.4 (Ganymede)
