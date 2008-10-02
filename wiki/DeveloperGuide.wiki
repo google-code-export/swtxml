@@ -81,12 +81,12 @@ public class SwtWidgetsExamplesWindow extends SwtXmlShell {
 
 = Layouts =
 
-  * Composite elements have a layout attribute which is interpreted in CSS-like syntax. Every setter / field of the Layout class is a property you can specifiy here: 
+  * Composite elements have a layout attribute which is interpreted in CSS-like syntax. Every setter / field of the Layout class is a property you can specify here: 
     {{{
 <Composite layout="layout:grid; numColumns:3; marginTop:10; "/>
 }}}
 
-  * Inside a Composite, child tags can have a layoutData attribute. You can use all properties of the LayoutData class here:
+  * Inside a Composite, child tags can have a {{{layoutData}}} attribute. You can use all properties of the {{{LayoutData}}} class here:
     {{{
 <Composite layout="layout:grid; numColumns:2; "> 
     <Label text="123" layoutData="widthHint:100;"/> 
