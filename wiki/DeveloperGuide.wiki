@@ -13,7 +13,7 @@
 
 = General Markup syntax =
 
-  * The meaning of the XML is defined by its XML namespace. In the example above, the default xmlns is "http://www.swtxml.com/swt". This namespace maps SWT classes to XML - if you're familiar with SWT, you only need to learn the conversion rules:
+  * The meaning of the XML tags is defined by their namespace. The namespace to create SWT widgets is {{{http://www.swtxml.com/swt}}}. This namespace maps SWT classes to XML - if you're familiar with SWT, you only need to learn the conversion rules:
     {{{
 <?xml version="1.0" encoding="utf-8"?>
 <Composite xmlns="http://www.swtxml.com/swt">
@@ -21,7 +21,7 @@
     }}}
 
 
-  * Every widget class becomes a XML tag. So you have <Button/>, <Text/>, <Label/> and so on:
+  * Every widget class is represented by a XML tag. So you have <Button/>, <Text/>, <Label/> and so on:
     {{{
 <?xml version="1.0" encoding="utf-8"?>
 <Composite xmlns="http://www.swtxml.com/swt">
@@ -52,7 +52,7 @@
 
   * The view class (same location and name as the markup file) handles parsing the markup and creating the widgets.
 
-  * You can implement the setup method to implement logic to be executed after the view was created.
+  * You can implement the {{{setupView}}} method to implement logic to be executed after the view was created.
 
   * You can use the widgets here by assigning an id="..." attribute in the markup and declaring an {{{@ById}}} annotated field. The field will be set by the SWT/XML parser.
     {{{
