@@ -43,9 +43,14 @@
 <Button text="hello" enabled="false"/>
     }}}
 
-  * Style constants can be specified using a comma separated list in the style attribute:
+  * Style constants are specified using a comma separated list in the style attribute:
     {{{
 <Button text="hello" style="TOGGLE,FLAT"/>
+    }}}
+
+  * Colors are specified by name (as defined in SWT.COLOR_*) or by their hex value:
+    {{{
+<Label foreground="red" background="#EE0000"/>
     }}}
 
 = Using the view class =
