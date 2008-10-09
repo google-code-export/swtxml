@@ -99,7 +99,7 @@ public class SwtWidgetsExamplesWindow extends SwtXmlShell {
 </Composite> 
 }}}
 
-  * FormLayout works the same way and comes with a compact syntax for expressing the layout constraints:
+  * {{{FormLayout}}} works the same way and comes with a compact syntax for expressing the layout constraints:
     {{{
 <Composite layout="layout:form;spacing:3;">
     <Label id="test" text="Test:" layoutData="top:10;left:10;"/>
