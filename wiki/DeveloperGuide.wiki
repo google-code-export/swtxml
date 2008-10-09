@@ -48,7 +48,7 @@
 <Button text="hello" style="TOGGLE,FLAT"/>
     }}}
 
-  * Colors are specified by name (as defined in SWT.COLOR_*) or by their hex value:
+  * Colors are specified by name (as defined in {{{SWT.COLOR_*}}}) or by their hex value:
     {{{
 <Label foreground="red" background="#EE0000"/>
     }}}
