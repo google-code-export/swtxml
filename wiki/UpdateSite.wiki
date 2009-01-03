@@ -2,7 +2,7 @@
 
 = Eclipse Update Site =
 
-An Eclipse Update Site for installing the Runtime and IDE plug-in in Eclipse 3.4 is available at:
+An Eclipse Update Site for installing the Runtime and IDE plug-in in Eclipse 3.4 (for RCP/Plug-in Developers) is available at:
 
 {{{
 http://www.swtxml.com/updates/
