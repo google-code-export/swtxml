@@ -21,7 +21,7 @@
     }}}
 
 
-  * Every widget class is represented by a XML tag. So you have <Button/>, <Text/>, <Label/> and so on:
+  * Every widget class is represented by a XML tag. So you have {{{<Button/>}}}, {{{<Text/>}}}, {{{<Label/>}}} and so on:
     {{{
 <?xml version="1.0" encoding="utf-8"?>
 <Composite xmlns="http://www.swtxml.com/swt">
