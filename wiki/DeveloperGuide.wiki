@@ -1,5 +1,7 @@
 #summary Tutorial and guide for developers
 
+<wiki:toc/>
+
 = Getting started =
 
   * Install the SWT/XML plugins in your Eclipse IDE (version 3.4 for RCP/Plug-in Developers) using the [http://code.google.com/p/swtxml/wiki/UpdateSite?tm=2 update site]
