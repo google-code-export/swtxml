@@ -2,7 +2,7 @@
 
 = Getting started =
 
-  * Install the SWT/XML plugins in your Eclipse IDE (version 3.4) using the [http://code.google.com/p/swtxml/wiki/UpdateSite?tm=2 update site]
+  * Install the SWT/XML plugins in your Eclipse IDE (version 3.4 for RCP/Plug-in Developers) using the [http://code.google.com/p/swtxml/wiki/UpdateSite?tm=2 update site]
 
   * For playing around with SWT/XML create a Plug-in project and add a dependency to the "com.swtxml" plug-in
 
