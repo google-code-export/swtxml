@@ -16,4 +16,4 @@ Packaged downloads containing the built plug-ins and the sources are available h
 
 = Requirements =
 
- * Eclipse 3.4 (Ganymede), Java 1.5 or newer
+ * Eclipse 3.4 for RCP/Plug-in Developers, Java 1.5 or newer
