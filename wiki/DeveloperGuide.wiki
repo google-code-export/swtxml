@@ -48,7 +48,7 @@ SWT/XML IDE requires Eclipse IDE for RCP/Plug-in Developers, at least version 3.
 </Composite> 
     }}}
  
-  * Every *setter* method of the widget class is an attribute for the tag. For example: button.setText(String text) is {{{<Button text="sometext"/>}}}:
+  * Every *setter* method of the widget class is an attribute for the tag. For example: button.setText("sometext") is {{{<Button text="sometext"/>}}}:
     {{{
 <Button text="hello" enabled="false"/>
     }}}
