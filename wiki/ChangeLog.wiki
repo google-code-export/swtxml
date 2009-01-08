@@ -1,5 +1,20 @@
 #summary Changes / What's new and noteworthy?
 
+= 0.0.6 =
+
+  * Preview can be resized. Thanks to mikkel.t.andersen.
+  * Preview for translated/i18n labels. Thanks to mikkel.t.andersen.
+  * Image support
+  * Added SwtXmlDialog base class
+  * Widgets Browser, Canvas, Link, Scale, StyledText, DateTime, Sash, TreeColumn supported
+  * Content assist in SWT/XML works for backgroundMode property
+  * Fixed [http://code.google.com/p/swtxml/issues/detail?id=7 Issue 7]: Outline in XML Editor
+  * Fixed [http://code.google.com/p/swtxml/issues/detail?id=22 Issue 22]: Open preview automatically when swtxml file is created / opened
+  * Fixed [http://code.google.com/p/swtxml/issues/detail?id=18 Issue 18] and [http://code.google.com/p/swtxml/issues/detail?id=27 Issue 27]: Binary distribution comes with dropins folder and local update site, source plugin provided, plugins compiled with debug information/line numbers
+  * Fixed [http://code.google.com/p/swtxml/issues/detail?id=31 Issue 31]: Parent container in PreviewViewPart may not be reused. Thanks to mikkel.t.andersen.
+  * Image and color resources are disposed correctly now
+  * Preview shows errors similar to Eclipse Editors
+
 = 0.0.5 =
   * Package com.swtxml.container renamed to com.swtxml.views
 
