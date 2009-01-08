@@ -6,11 +6,11 @@
 
 SWT/XML IDE requires Eclipse IDE for RCP/Plug-in Developers, at least version 3.4. It can be installed in different ways. If in doubt use the update site:
 
-  * **Update site**: Help ⇒ Software Update ⇒ Available Software ⇒ Add Site ⇒ Update site: {{{http://www.swtxml.com/updates/}}} ⇒ select SWT/XML ⇒ Install
+  * *Update site*: Help ⇒ Software Update ⇒ Available Software ⇒ Add Site ⇒ Update site: {{{http://www.swtxml.com/updates/}}} ⇒ select SWT/XML ⇒ Install
 
-  * **Local update site**: [http://code.google.com/p/swtxml/downloads/list Download SWT/XML], Help ⇒ Software Update ⇒ Available Software ⇒ Add Site ⇒ Local ⇒ Choose {{{update-site}}} folder from the unzipped files
+  * *Local update site*: [http://code.google.com/p/swtxml/downloads/list Download SWT/XML], Help ⇒ Software Update ⇒ Available Software ⇒ Add Site ⇒ Local ⇒ Choose {{{update-site}}} folder from the unzipped files
 
-  * **Eclipse dropins folder**: [http://code.google.com/p/swtxml/downloads/list Download SWT/XML], copy the dropins folder from the unzipped files to your Eclipse installation
+  * *Eclipse dropins folder*: [http://code.google.com/p/swtxml/downloads/list Download SWT/XML], copy the dropins folder from the unzipped files to your Eclipse installation
 
 = Getting started =
 
