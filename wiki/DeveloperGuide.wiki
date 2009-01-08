@@ -2,9 +2,17 @@
 
 <wiki:toc/>
 
-= Getting started =
+= Installation =
 
-  * Install the SWT/XML plugins in your Eclipse IDE (version 3.4 for RCP/Plug-in Developers) using the [http://code.google.com/p/swtxml/wiki/UpdateSite?tm=2 update site]
+SWT/XML IDE requires Eclipse IDE for RCP/Plug-in Developers, at least version 3.4. It can be installed in different ways. If in doubt use the update site:
+
+  * Update site: Help -> Software Update, Available Software, Add Site, Update site: {{{http://www.swtxml.com/updates/}}}, select SWT/XML, Install
+
+  * Local update site: [http://code.google.com/p/swtxml/downloads/list Download SWT/XML], unzip, Help -> Software Update, Available Software, Add Site, choose update-site folder from the uncompressed project
+
+  * Eclipse dropins folder: [http://code.google.com/p/swtxml/downloads/list Download SWT/XML], unzip, copy the dropins folder to your Eclipse installation
+
+= Getting started =
 
   * For playing around with SWT/XML create a Plug-in project and add a dependency to the "com.swtxml" plug-in
 
