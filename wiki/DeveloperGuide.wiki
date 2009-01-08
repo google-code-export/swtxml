@@ -14,16 +14,16 @@ SWT/XML IDE requires Eclipse IDE for RCP/Plug-in Developers, at least version 3.
 
 = Getting started =
 
-  * For playing around with SWT/XML create a Plug-in project and add a dependency to the "com.swtxml" plug-in
+  * For trying out SWT/XML create a Plug-in project and add a dependency to the "com.swtxml" plug-in
 
-  * Create a new SWT/XML Class using File ⇒ New ⇒ Other ⇒ SWT/XML ⇒ SWT/XML Class. You need to specify a class name and the base type. Every SWT/XML markup file is accompanied by a view class with the same name (which extends a SWT/XML base class):
+  * Create a new SWT/XML file using File ⇒ New ⇒ Other ⇒ SWT/XML ⇒ SWT/XML Class. You need to specify a class name and the base type. Every SWT/XML markup file is accompanied by a view class with the same name (which extends a SWT/XML base class):
     http://swtxml.googlecode.com/svn/trunk/img/class_swtxml.png
 
   * You can get a preview for swtxml files with Window ⇒ Show View ⇒ SWT/XML ⇒ SWT/XML ⇒ SWT/XML Preview. It is updated whenever you save an active SWT/XML editor. The editor has full content assist for SWT/XML markup syntax, so you should be able to use Ctrl+Space everywhere.
 
 = SWT Markup syntax =
 
-  * The meaning of the XML tags is defined by their namespace. The namespace to create SWT widgets is {{{http://www.swtxml.com/swt}}}. This namespace provides a 1:1 mapping from SWT widget classes to XML tags. If you're familiar with SWT, you only need to learn few rules. The root tag of the document is always {{{Composite}}}:
+  * The meaning of the XML tags is defined by their *namespace*. The namespace to create SWT widgets is {{{http://www.swtxml.com/swt}}}. This namespace provides a *1:1 mapping from SWT widget classes to XML tags*. If you're familiar with SWT, you only need to learn few rules. The root tag of the document is always {{{Composite}}}:
     {{{
 <?xml version="1.0" encoding="utf-8"?>
 <Composite xmlns="http://www.swtxml.com/swt">
@@ -31,7 +31,7 @@ SWT/XML IDE requires Eclipse IDE for RCP/Plug-in Developers, at least version 3.
     }}}
 
 
-  * Every widget class is represented by a XML tag. So you have {{{<Button/>}}}, {{{<Text/>}}}, {{{<Label/>}}} and so on:
+  * Every *widget* class is represented by a XML tag. So you have {{{<Button/>}}}, {{{<Text/>}}}, {{{<Label/>}}} and so on:
     {{{
 <?xml version="1.0" encoding="utf-8"?>
 <Composite xmlns="http://www.swtxml.com/swt">
@@ -40,7 +40,7 @@ SWT/XML IDE requires Eclipse IDE for RCP/Plug-in Developers, at least version 3.
     }}}
  
 
-  * Composite tags can have childs - these are added to the containing composite: 
+  * Composite tags can have *childs* - these are added to the containing composite: 
     {{{
 <Composite>
     <Label/> 
@@ -48,19 +48,25 @@ SWT/XML IDE requires Eclipse IDE for RCP/Plug-in Developers, at least version 3.
 </Composite> 
     }}}
  
-  * Every setter method of the widget class is an attribute for the tag. For example: button.setText(String text) is {{{<Button text="sometext"/>}}}:
+  * Every *setter* method of the widget class is an attribute for the tag. For example: button.setText(String text) is {{{<Button text="sometext"/>}}}:
     {{{
 <Button text="hello" enabled="false"/>
     }}}
 
-  * Style constants are specified with the style attribute as a comma separated list:
+  * *Style* constants are specified with the style attribute as a comma separated list:
     {{{
 <Button text="hello" style="TOGGLE,FLAT"/>
     }}}
 
-  * Colors are specified by name (as defined in {{{SWT.COLOR_*}}}) or by a [http://en.wikipedia.org/wiki/Web_colors#Hex_triplet hex triplet]:
+  * *Colors* are specified by name (as defined in {{{SWT.COLOR_*}}}) or by a [http://en.wikipedia.org/wiki/Web_colors#Hex_triplet hex triplet]:
     {{{
 <Label foreground="red" background="#EE0000"/>
+    }}}
+
+  * *Images* can be specified using a path relative to the .swtxml file. You can refer to the root of the containing plugin using the scheme prefix "{{{bundle:}}}":
+    {{{
+<Label image="someimage.png"/>
+<Label image="bundle:/icons/someicon.png"/>
     }}}
 
 = Using the view class =
