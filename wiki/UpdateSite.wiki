@@ -16,7 +16,7 @@ Packaged downloads containing the built plug-ins and the sources are available h
 
 = Installation instructions =
 
-See [DeveloperGuide Developer Guide].
+  See [DeveloperGuide#Installation Developer Guide].
 
 = Requirements =
 
