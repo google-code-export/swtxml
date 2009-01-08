@@ -8,7 +8,7 @@
 
   * For playing around with SWT/XML create a Plug-in project and add a dependency to the "com.swtxml" plug-in
 
-  * Create a new SWT/XML Class using File / New / Other - Other / SWT/XML Class. You need to specify a class name and the base type. Every SWT/XML markup file is accompanied by a  view class with the same name (which extends a SWT/XML base class):
+  * Create a new SWT/XML Class using File -> New -> Other -> SWT/XML -> SWT/XML Class. You need to specify a class name and the base type. Every SWT/XML markup file is accompanied by a view class with the same name (which extends a SWT/XML base class):
     http://swtxml.googlecode.com/svn/trunk/img/class_swtxml.png
 
   * You can get a preview for swtxml files with Window / Show View / Other / SWT/XML / SWT/XML Preview. It is updated whenever you save an active SWT/XML editor. The editor has full content assist for SWT/XML markup syntax, so you should be able to use Ctrl+Space everywhere.
