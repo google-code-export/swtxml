@@ -2,8 +2,8 @@
 
 = 0.0.7 =
 
-  * SWT/XML works with Eclipse 3.3 now. You need to install Web Standard Tools (WST) (using the update site) and install the "org.apache.commons.lang" plug-in (you can copy it from Eclipse 3.4).
-  * RuntimeExceptions from event methods are rethrown directly, checked exceptions are rethrown as EventListenerException
+  * SWT/XML works with Eclipse 3.3 now. You need to install Web Standard Tools (WST) (using the update site) and install the "{{{org.apache.commons.lang}}}" plug-in (you can copy it from Eclipse 3.4).
+  * {{{RuntimeException}}}s from event methods are rethrown directly, checked exceptions are rethrown as {{{EventListenerException}}}
   * Classes are compiled with debug information now
 
 = 0.0.6 =
