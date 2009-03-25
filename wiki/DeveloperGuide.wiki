@@ -75,7 +75,7 @@ SWT/XML IDE requires Eclipse IDE for RCP/Plug-in Developers, at least version 3.
 
   * You can implement the {{{setupView}}} method to implement logic to be executed after the view was created.
 
-  * You can use the widgets here by assigning an id="..." attribute in the markup and declaring an {{{@ById}}} annotated field. The field will be set by the SWT/XML parser.
+  * You can access the widgets in your code by assigning an id="someControl" attribute in the markup and declaring a field "someControl annotated with {{{@ById}}}. The value for this field will be injected by the SWT/XML parser before {{{setupView}}} is called.
     {{{
 <?xml version="1.0" encoding="utf-8"?>
 <Composite xmlns="http://www.swtxml.com/swt">
@@ -125,7 +125,7 @@ public class SwtWidgetsExamplesWindow extends SwtXmlShell {
 
 = Events =
 
-   * The namespace {{{http://www.swtxml.com/events}}} provides an attribute for every event listener method (like {{{widgetSelected}}} from {{{SelectionListener}}}). When the event is triggered, a method by that name is called on your view class (optional with event parameter):
+   * The namespace {{{http://www.swtxml.com/events}}} provides an attribute for every event listener method (like {{{widgetSelected}}} from {{{SelectionListener}}}). When the event is triggered, a method by that name is called on your view class (optionally the event parameter can be declared and is passed to the method):
     {{{
 <?xml version="1.0" encoding="utf-8"?>
 <Composite xmlns="http://www.swtxml.com/swt" xmlns:on="http://www.swtxml.com/events">
