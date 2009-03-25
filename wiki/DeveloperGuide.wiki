@@ -75,7 +75,7 @@ SWT/XML IDE requires Eclipse IDE for RCP/Plug-in Developers, at least version 3.
 
   * You can implement the {{{setupView}}} method to implement logic to be executed after the view was created.
 
-  * You can access the widgets in your code by assigning an id="someControl" attribute in the markup and declaring a field "someControl annotated with {{{@ById}}}. The value for this field will be injected by the SWT/XML parser before {{{setupView}}} is called.
+  * You can access the widgets in your code by assigning an {{{id="someControl"}}} attribute in the markup and declaring a field "someControl annotated with {{{@ById}}}. The value for this field will be injected by the SWT/XML parser before {{{setupView}}} is called.
     {{{
 <?xml version="1.0" encoding="utf-8"?>
 <Composite xmlns="http://www.swtxml.com/swt">
