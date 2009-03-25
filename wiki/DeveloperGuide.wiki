@@ -69,13 +69,13 @@ SWT/XML IDE requires Eclipse IDE for RCP/Plug-in Developers, at least version 3.
 <Label image="bundle:/icons/someicon.png"/>
     }}}
 
-= Using the view class =
+= Implementing the view class =
 
-  * The view class (same location and name as the markup file) handles parsing the markup and creating the widgets.
+  * The superclass of your view parses the markup and creates the widgets.
 
-  * You can implement the {{{setupView}}} method to implement logic to be executed after the view was created.
+  * Override the {{{setupView}}} method with your custom code to be executed after the widgets were created from the XML markup.
 
-  * You can access the widgets in your code by assigning an {{{id="someControl"}}} attribute in the markup and declaring a field "someControl annotated with {{{@ById}}}. The value for this field will be injected by the SWT/XML parser before {{{setupView}}} is called.
+  * To access the widget objects in your code add an {{{id="someControl"}}} attribute in your markup and declare a field {{{"someControl"}}} annotated with {{{@ById}}}. The value for this field will be injected by the SWT/XML parser before {{{setupView}}} is called.
     {{{
 <?xml version="1.0" encoding="utf-8"?>
 <Composite xmlns="http://www.swtxml.com/swt">
@@ -102,12 +102,12 @@ public class SwtWidgetsExamplesWindow extends SwtXmlShell {
 
 = Layouts =
 
-  * Composite elements have a layout attribute which is interpreted in CSS-like syntax. Every setter / field of the Layout class is a property you can specify here: 
+  * Composite elements can have a layout attribute which is interpreted in CSS-like syntax. Every setter / field of the Layout class is a property you can specify here: 
     {{{
 <Composite layout="layout:grid; numColumns:3; marginTop:10; "/>
 }}}
 
-  * Inside a Composite, child tags can have a {{{layoutData}}} attribute. You can use all properties of the {{{LayoutData}}} class here:
+  * Child tags of Composite tags can specify a {{{layoutData}}} attribute. You can use all properties of the related {{{LayoutData}}} class here:
     {{{
 <Composite layout="layout:grid; numColumns:2; "> 
     <Label text="123" layoutData="widthHint:100;"/> 
