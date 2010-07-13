@@ -5,7 +5,7 @@
 An Eclipse Update Site for installing the Runtime and IDE plug-in in Eclipse 3.4 or newer (for RCP/Plug-in Developers) is available at:
 
 {{{
-http://www.swtxml.com/updates/
+http://www.ralfebert.de/projects/swtxml/releases/
 }}}
 
 = Packaged downloads =
